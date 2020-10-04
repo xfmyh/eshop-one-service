@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface EshopPriceService {
 
 
-    @RequestMapping(value = "/eshop-price/findByProductId",method = RequestMethod.GET)
+    @RequestMapping(value = "/product-price/findByProductId",method = RequestMethod.GET)
     String findPriceByProductId(@RequestParam(value = "productId") Long productId);
 
 }

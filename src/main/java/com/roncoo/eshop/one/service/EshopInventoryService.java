@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface EshopInventoryService {
 
 
-    @RequestMapping(value = "/eshop-inventory/findByProductId",method = RequestMethod.GET)
+    @RequestMapping(value = "/product-inventory/findByProductId",method = RequestMethod.GET)
     String findInventoryByProductId(@RequestParam(value = "productId") Long productId);
 
 }
